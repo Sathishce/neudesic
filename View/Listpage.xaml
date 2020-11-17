@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms" 
+             xmlns:fftransformations="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations" 
+             xmlns:ffimageloadingsvg="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
+             x:Class="Neudesic.View.Listpage"
+             Title="Country"
+             >
+
+
+    <ContentPage.Content>
+        <ListView ItemsSource="{Binding myListmodel}"
+                  HasUnevenRows="true"
+                  SeparatorVisibility="None"
+                  ItemTapped="OnItemSelected">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        
+                        <Grid Padding="10" RowSpacing="10" ColumnSpacing="10">
+                            <Grid.RowDefinitions>
+
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <ffimageloadingsvg:SvgCachedImage HorizontalOptions="Center" VerticalOptions="Center"
+			                    WidthRequest="60" HeightRequest="66"
+                                Aspect="AspectFill"
+			                    DownsampleToViewSize="true"
+                                Grid.RowSpan="2"
+			                    Source = "{Binding flag}">
+                                
+                            </ffimageloadingsvg:SvgCachedImage>
+
+
+
+                            <Label Grid.Column="1"
+                                   Text="{Binding name}"
+                                   VerticalOptions="End" />
+                            <Label Grid.Column="1"
+                                   Grid.Row="1"
+                                   VerticalOptions="Start"
+                                   Text="{Binding capital}" />
+                          
+
+                        </Grid>
+                        
+                        
+                        
+                    </ViewCell>
+                    
+                    
+                </DataTemplate>
+            </ListView.ItemTemplate>
+            
+
+        </ListView>
+    </ContentPage.Content>
+</ContentPage>

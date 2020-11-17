@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:ffimageloadingsvg="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms" xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             x:Class="Neudesic.View.ListDetails"
+             Title="Country">
+
+
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid Padding="10" RowSpacing="10" ColumnSpacing="10" x:Name="MainGrid">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="150"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width=".5*"/>
+                    <ColumnDefinition Width=".1*"/>
+                    <ColumnDefinition Width=".4*"/>
+                </Grid.ColumnDefinitions>
+
+                <Label x:Name="MyItemName"
+					Grid.Row="1"
+					Grid.ColumnSpan="3"
+					VerticalOptions="Center"
+					HorizontalOptions="Center"
+					FontSize="Medium"
+                    FontAttributes="Bold"
+					Text="xxx"/>
+
+                <ffimageloadingsvg:SvgCachedImage x:Name="MyImageC" HorizontalOptions="Center" VerticalOptions="Center"
+			                    WidthRequest="260" HeightRequest="266"
+                                Aspect="AspectFill"
+			                    DownsampleToViewSize="true"
+                                Grid.Row="2"
+                                Grid.ColumnSpan="3"
+                                Grid.RowSpan="2">
+
+                </ffimageloadingsvg:SvgCachedImage>
+
+                <Label x:Name="MyItemDetails"
+					Grid.Row="4"
+					Grid.ColumnSpan="3" 
+					FontAttributes="Bold"
+					Text="Currency : "
+                    FontSize="Subtitle"
+					HorizontalOptions="Center"/>
+
+
+
+                <Label
+					Grid.Row="5"
+					Grid.ColumnSpan="3" 
+					FontAttributes="Bold"
+					FontSize="Medium"
+					Text="Other Details"
+					TextColor="#3498DB" />
+
+                <Label 
+					Grid.Row="6"
+					Grid.Column="0"
+					Grid.ColumnSpan="2"
+					FontAttributes="Bold"
+					FontSize="Small"
+					Text="NativeName"
+					VerticalOptions="Center"/>
+
+                <Label 
+                    x:Name="MyItemNativename"
+					Grid.Row="6"
+					Grid.Column="2"
+					FontSize="Small"
+					Text="dff "
+					HorizontalOptions="End"
+					VerticalOptions="Center"/>
+
+                <Label 
+					Grid.Row="7"
+					Grid.Column="0"
+					Grid.ColumnSpan="2"
+					FontAttributes="Bold"
+					FontSize="Small"
+					Text="Region"
+					VerticalOptions="Center"/>
+
+                <Label 
+                    x:Name="MyItemRegion"
+					Grid.Row="7"
+					Grid.Column="2"
+					FontSize="Small"
+					Text="fdsf"
+					HorizontalOptions="End"
+					VerticalOptions="Center"/>
+
+                <Label 
+					Grid.Row="8"
+					Grid.Column="0"
+					Grid.ColumnSpan="2"
+					FontAttributes="Bold"
+					FontSize="Small"
+					Text="Population"
+					VerticalOptions="Center"/>
+
+                <Label 
+                    x:Name="MyItemsPopulation"
+					Grid.Row="8"
+					Grid.Column="2"
+					FontSize="Small"
+					Text="dfsd"
+					HorizontalOptions="End"
+					VerticalOptions="Center"/>
+
+                <Label 
+					Grid.Row="9"
+					Grid.Column="0"
+					Grid.ColumnSpan="2"
+					FontAttributes="Bold"
+					FontSize="Small"
+					Text="area"
+					VerticalOptions="Center"/>
+
+                <Label 
+                    x:Name="MyItemArea"
+					Grid.Row="9"
+					Grid.Column="2"
+					FontSize="Small"
+					Text="fdsf"
+					HorizontalOptions="End"
+					VerticalOptions="Center"/>
+
+                <Label 
+					Grid.Row="10"
+					Grid.Column="0"
+					Grid.ColumnSpan="2"
+					FontAttributes="Bold"
+					FontSize="Small"
+					Text="Languages"
+					VerticalOptions="Center"/>
+
+                <Label 
+                    x:Name="MyItemLanguage"
+					Grid.Row="10"
+					Grid.Column="2"
+					FontSize="Small"
+					Text="dfsf"
+					HorizontalOptions="End"
+					VerticalOptions="Center"/>
+
+                <Label 
+					Grid.Row="11"
+					Grid.Column="0"
+					Grid.ColumnSpan="2"
+					FontAttributes="Bold"
+					FontSize="Small"
+					Text="numericCode"
+					VerticalOptions="Center"/>
+
+                <Label 
+                    x:Name="MyItemNumericCode"
+					Grid.Row="11"
+					Grid.Column="2"
+					FontSize="Small"
+					Text="sdfds"
+					HorizontalOptions="End"
+					VerticalOptions="Center"/>
+
+
+
+
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
